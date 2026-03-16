@@ -1,7 +1,7 @@
 import axios from "axios";
 import { type Task } from "./types";
 
-const API = "http://localhost:5000/api/tasks";
+const API = "https://week4-e4j2.onrender.com/api/tasks";
 
 export const getTasks = async (): Promise<Task[]> => {
   const res = await axios.get(API);
